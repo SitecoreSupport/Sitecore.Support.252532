@@ -6,7 +6,7 @@
     public SolrDocumentBuilder(IIndexable indexable, IProviderUpdateContext context)
     : base(indexable, context) { }
 
-    protected override void AddField(IIndexableDataField field)
+    public override void AddField(IIndexableDataField field)
     {
 
       if (string.IsNullOrEmpty(field.Name) && string.IsNullOrEmpty(field.TypeKey))
